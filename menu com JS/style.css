@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.menu {
+    width: 50px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0px 40px 1%;
+    position: fixed;
+    position: absolute;
+    overflow: hidden;
+  
+    transition: .3s;
+    
+   
+}
+
+.menu.expandir {
+    width: 250px;
+    border-right: 2px solid rgb(147, 72, 218);
+    
+
+}
+
+.menu.expandir .txt-link {
+    margin-left: 40px;
+    transition: .5s;
+    opacity: 1;
+
+    
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 2px;
+}
+
+
+
+.btn-expandir i {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.lista {
+    height: 100%;
+    list-style: none;
+    margin-left: 2px;
+    
+}
+
+.lista li.ativo {
+    background-color: rgb(147, 72, 218);
+
+}
+
+.lista li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.lista  a:hover {
+    background-color: rgb(147, 72, 218);
+    transition: 0.4s ease;
+    border-right: 200px solid #ffffff27;
+
+}
+
+.lista  a .txt-link {
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+
+}
+
+.lista  a .icon i {
+    font-size: 25px;
+}

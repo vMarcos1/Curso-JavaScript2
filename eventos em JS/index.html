@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        input {
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        
+        .eventos {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            background-color: blue;
+
+        }
+    </style>
+
+    <title>objetos</title>
+</head>
+<body onresize="console.log('Ouve um redimencionamento')">
+    <h1>Obejetos em JavaScript</h1>
+    <input id="btn" type="button" value="Interaja aqui" onclick="clicar()" ondblclick="clickDuplo()">
+
+    <br>
+
+    <select onchange="mudou()" name="itens" id="itens">
+        <option value=" 1">Valor 1</option>
+        <option value=" 2">Valor 2</option>
+        <option value=" 3">Valor 3</option>
+        <option value=" 4">Valor 4</option>
+    </select>
+
+    <div class="eventos" onmouseout="saiu()" onmouseenter="entrou()">
+    </div>
+
+    <input  onkeypress="precionar()" type="text" onblur="volte()" name="texto" id="texto" placeholder="Digite alguma coisa">
+
+
+    <script src="eventos.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(125, 125, 252);
+    margin: 0;
+}
+
+.cabecalho {
+    background-color: rgb(218, 218, 5);
+    width: 100vw;
+    margin-top: 0;
+}
+
+.caixa {
+    position: absolute;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+#valor {
+    border: 1px solid black;
+    padding: 5px;
+}
